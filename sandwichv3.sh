@@ -24,7 +24,7 @@ touch grocery_list.txt | echo "Your Grocery List:" > "grocery_list.txt"
 veggie=( "italian seasoning" "red onion" "bell pepper" "mayo" "sourdough bread" "mozzarella" "zuchini" "garlic powder" "roasted red pepper spread" )
 italian=( "bread" "pepperoni" "salami" "cheese" "lettuce" "tomatoes" "red onions" "peppers" "mayo" )
 ham_cheese=( "sourdough bread" "mayonnaise" "dijon mustard" "honey" "swiss cheese" "ham" "dill pickle" )
-meatball =( "wheat bun 6 inch" "provolone cheese" "4 meatballs" "oregano" )
+meatball=( "wheat bun 6 inch" "provolone cheese" "4 meatballs" "oregano" )
 
 # if statement for each sandwich option with nested for loop 
 
@@ -52,21 +52,21 @@ fi
 
 # Ham and cheese option
 if [ "$sandwich" == "ham & cheese" ]; then
- for i in "${ham_cheese[@]}"
- do
-  # asks user if they have the item
-  read -p "do you have $i? " ans
-  echo $ans | grep -e "yes" -e "y" || echo "$i" >> grocery_list.txt
-  done
+	for i in "${ham_cheese[@]}"
+ 	do
+  		# asks user if they have the item
+ 		read -p "do you have $i? " ans
+  		echo $ans | grep -e "yes" -e "y" || echo "$i" >> grocery_list.txt
+  	done
 fi
 
 
 if [ "$sandwich" == meatball ]; then
         for i in  "${meatball[@]}"
-		do
-		        read -p "do you have $i? " ans
-				echo $ans | grep -e "yes" -e "y" || echo "$i" >> grocery_list.txt
-		done
+	do
+		read -p "do you have $i? " ans
+	 	echo $ans | grep -e "yes" -e "y" || echo "$i" >> grocery_list.txt
+	done
 fi
 
 
