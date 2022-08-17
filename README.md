@@ -19,14 +19,15 @@ Lorenzo M
 
 ### Files
 We are using files to store the following
-* Sandwich ingredient list
-* Available ingredients
-* Missing ingredients
 * Needed ingredients
 
 ### Script
 The script does the following:
+* Store sandwich ingredients in an array list
 * Ask user for a desired sandwich
 * Takes a predetermined available ingredient list and verifies available ingredients
+  * User will verify with a yes or no if they have the necessary ingredient for their desired sandwich
+  * Each element of the sandwich array selected will be verified by user for availability
   * If ingredients are available, says that sandwich was made
   * If not, populate ingredients in a separate text file
+  * Populated list of missing ingredients will then be available

@@ -79,6 +79,6 @@ echo " "
 sleep 1
 cat grocery_list.txt
 echo " "
-echo Thank you for using our service.
+echo "Thank you for using our service."
 echo " "
 echo "Bon Appetit!"
