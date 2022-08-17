@@ -31,3 +31,7 @@ The script does the following:
   * If ingredients are available, says that sandwich was made
   * If not, populate ingredients in a separate text file
   * Populated list of missing ingredients will then be available
+
+## Missing implementation
+* The text files were supposed to be used to index into an array instead of creating arrays in the bash script itself
+* There is missing implementation for what happens if all ingredients available
